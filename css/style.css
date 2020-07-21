@@ -384,6 +384,27 @@ a .social-link:focus{
     display: block;
     padding: 12px;
 }
+.social-link-item{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.social-link-item.instagram{
+    background-image: url(../images/icons/icon-instagram.svg);
+}
+.social-link-item.twitter{
+    background-image: url(../images/icons/icon-twitter.svg);
+}
+.social-link-item.facebook{
+    background-image: url(../images/icons/icon-facebook.svg);
+}
+.social-link-item.linkedin{
+    background-image: url(../images/icons/icon-linkedin.svg);
+}
 .social-link-list{
     display: flex;
     justify-content: space-between;
