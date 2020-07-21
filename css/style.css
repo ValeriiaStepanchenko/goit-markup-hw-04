@@ -163,6 +163,7 @@ ul .header-tel:focus{
     ),
     url(../images/hero-img.jpg);
     background-size: cover;
+    max-width: 1600px;
 }
 .hero-container{
     width: 600px;
