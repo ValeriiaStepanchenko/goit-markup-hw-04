@@ -142,23 +142,17 @@ ul .navigation-link:focus{
 .header-list-item:not(:last-child){
     margin-right: 50px;
 }
-.header-mail::before{
-    display: inline-block;
-    content: '';
-    width: 16px;
-    height: 11.2px;
-    background-image: url(../images/icons/icon-envelope.svg);
-    background-repeat: no-repeat;
+
+.header-link-svg{
     margin-right: 10px;
 }
-.header-tel::before{
-    display: inline-block;
-    content: "";
+.header-link-svg.mail{
+    width: 16px;
+    height: 11px;
+}
+.header-link-svg.tel{
     width: 10px;
     height: 15px;
-    background-image: url(../images/icons/icon-smartphone.svg);
-    background-repeat: no-repeat;
-    margin-right: 10px;
 }
 
 ul .header-mail,
@@ -166,10 +160,12 @@ ul .header-tel{
     display: flex;
     align-items: center;
     color: var(--p-text-color);
+    fill: var(--p-text-color);
 }
 ul .header-mail:hover,
 ul .header-tel:hover{
     color: var(--hover-color);
+    fill: var(--hover-color);
 }
 ul .header-mail:focus,
 ul .header-tel:focus{
@@ -384,17 +380,35 @@ a .social-link:focus{
 }
 .social-link{
     display: block;
-    padding: 12px;
-}
-.social-link-item{
-    display: inline-block;
     width: 44px;
     height: 44px;
-    background-color: transparent;
+}
+.social-link-svg{
+    padding: 12px;
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+.footer-list .social-link-svg{
+    fill: #FFFFFF;
+}
+.social-link-svg:hover{
+    fill: #FFFFFF;
+}
+.social-link-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
 }
+.social-link-item:hover{
+    background-color: var(--hover-color);
+}
+
 .social-link-item.instagram{
     background-image: url(../images/icons/icon-instagram.svg);
 }
@@ -432,20 +446,79 @@ a .social-link:focus{
 }
 .clients-list-item{
     border: 1px solid #AFB1B8;
-box-sizing: border-box;
-border-radius: 4px;
+    box-sizing: border-box;
+    width: 170px;
+    height: 90px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.clients-list-item:hover{
+    border-color: var(--hover-color);
 }
 .clients-list-link{
-    display: block;
-    padding-left: 65px;
-    padding-right: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-list-link-svg{
+    fill: #AFB1B8;
+}
+.clients-list-link-svg:hover{
+    fill: var(--hover-color);
+}
+.clients-list-link-svg.client-first{
+    width: 45px;
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 63px;
+    padding-right: 63px;
+}
+.clients-list-link-svg.client-second{
+    width: 40px;
+    height: 52px;
     padding-top: 19px;
     padding-bottom: 19px;
+    padding-left: 65px;
+    padding-right: 65px;
 }
-ul .clients-list-link:hover,
-ul .clients-list-link:focus{
-    color: var(--hover-color);
+.clients-list-link-svg.client-third{
+    width: 41px;
+    height: 43px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 64px;
+    padding-right: 64px;
 }
+.clients-list-link-svg.client-fourth{
+    width: 80px;
+    height: 42px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.clients-list-link-svg.client-fifth{
+    width: 59px;
+    height: 47px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    padding-left: 56px;
+    padding-right: 55px;
+}
+.clients-list-link-svg.client-sixth{
+    width: 89px;
+    height: 46px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 41px;
+    padding-right: 41px;
+}
+
                     /* FOOTER */
 footer{
     background-color: #2F303A;
@@ -520,18 +593,7 @@ b{
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
-.footer-list-item.instagram{
-    background-image: url(../images/icons/white-instagram.svg);
-}
-.footer-list-item.twitter{
-    background-image: url(../images/icons/white-twitter.svg);
-}
-.footer-list-item.facebook{
-    background-image: url(../images/icons/white-facebook.svg);
-}
-.footer-list-item.linkedin{
-    background-image: url(../images/icons/white-linkedin.svg);
-} 
+
 .footer-list-item.instagram:hover,
 .footer-list-item.twitter:hover,
 .footer-list-item.facebook:hover,
