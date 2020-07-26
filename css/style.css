@@ -384,10 +384,7 @@ color: var(--p-text-color);
 .social-link:focus .social-link-svg{
     fill: #FFFFFF;
 }
-.social-link:hover{
-    background-color: var(--hover-color);
-    border-radius: 50%;
-}
+.social-link:hover,
 .social-link:focus{
     background-color: var(--hover-color);
     border-radius: 50%;
@@ -399,7 +396,7 @@ color: var(--p-text-color);
     align-items: center;
     width: 44px;
     height: 44px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -446,13 +443,16 @@ color: var(--p-text-color);
     align-items: center;
     justify-content: center;
 }
-
 .clients-list-link-svg{
     fill: #AFB1B8;
 }
-.clients-list-link-svg:hover{
+.clients-list-link:hover .clients-list-link-svg,
+.clients-list-link:focus .clients-list-link-svg{
     fill: var(--hover-color);
 }
+/* .clients-list-link-svg:hover{
+    fill: var(--hover-color);
+} */
 .clients-list-link-svg.client-first{
     width: 45px;
     height: 50px;
