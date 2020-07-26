@@ -170,6 +170,7 @@ ul .header-tel:hover{
 ul .header-mail:focus,
 ul .header-tel:focus{
     color: var(--hover-color);
+    fill: var(--hover-color);
 }
 
                         /* MAIN */
