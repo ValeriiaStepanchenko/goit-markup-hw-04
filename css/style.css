@@ -122,9 +122,21 @@ ul .header-tel.link{
 
 ul .navigation-link{
     color: var(--title-color);
+    padding-bottom: 0px;
 }
 ul .current{
     color: #2196F3;
+}
+ul .current::after{
+    content: "";
+    display: block;
+    background-color: var(--hover-color);
+    min-width: 47px;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+    border-radius: 2px;
 }
 
 ul .navigation-link:hover,
